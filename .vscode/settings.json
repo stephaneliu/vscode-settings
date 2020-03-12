@@ -2,9 +2,11 @@
   "editor.lineNumbers": "relative",
   "editor.tabSize": 2,
   "editor.selectionHighlight": false,
-  "editor.fontFamily": "Fira Code",
+  "editor.fontFamily": "FiraCode-Retina",
   "editor.fontLigatures": true,
-  "vetur.validation.template": false,
+  "editor.formatOnSave": true,
+  "vetur.validation.template": false, // rely on eslint + prettier
+  "vetur.completion.useScaffoldSnippets": false, // disable in favor of Vue VS Code Snippets plugin by sarah.drasneryy
   "vim.camelCaseMotion.enable": true,
   "vim.easymotion": true,
   "vim.insertModeKeyBindings": [
