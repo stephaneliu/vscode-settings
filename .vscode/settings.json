@@ -5,6 +5,11 @@
   "editor.fontFamily": "FiraCode-Retina",
   "editor.fontLigatures": true,
   "editor.formatOnSave": true,
+  "explorer.confirmDelete": false,
+  "telemetry.enableTelemetry": false,
+  "terminal.integrated.shell.osx": "/Users/sliu/homebrew/bin/zsh",
+  "terminal.integrated.fontFamily": "Hack Nerd Font",
+  "terminal.external.osxExec": "iTerm.app"
   "vetur.validation.template": false, // rely on eslint + prettier
   "vetur.completion.useScaffoldSnippets": false, // disable in favor of Vue VS Code Snippets plugin by sarah.drasneryy
   "vim.camelCaseMotion.enable": true,
@@ -42,8 +47,4 @@
     }
   ],
   "vim.leader": ",",
-  "explorer.confirmDelete": false,
-  "terminal.integrated.shell.osx": "/Users/sliu/homebrew/bin/zsh",
-  "terminal.integrated.fontFamily": "Hack Nerd Font",
-  "terminal.external.osxExec": "iTerm.app"
 }
