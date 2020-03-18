@@ -5,6 +5,13 @@
   "editor.fontFamily": "FiraCode-Retina",
   "editor.fontLigatures": true,
   "editor.formatOnSave": true,
+  "eslint.validate": [
+    // configure which languages ESLint to validate
+    { "language": "vue", "autoFix": true },
+    { "language": "html", "autoFix": true },
+    { "language": "javascript", "autoFix": true }
+  ],
+  "eslint.autoFixOnSave": true,
   "explorer.confirmDelete": false,
   "telemetry.enableTelemetry": false,
   "terminal.integrated.shell.osx": "/Users/sliu/homebrew/bin/zsh",
@@ -46,5 +53,5 @@
       "after": ["<leader>", "b"]
     }
   ],
-  "vim.leader": ",",
+  "vim.leader": ","
 }
