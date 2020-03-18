@@ -20,7 +20,7 @@ code --force --install-extension msjsdiag.debugger-for-chrome
 code --force --install-extension octref.vetur
 code --force --install-extension rebornix.ruby
 code --force --install-extension sdras.night-owl
-code --force --install-extension sdras.vue-vscode-snippeets
+code --force --install-extension sdras.vue-vscode-snippets
 code --force --install-extension vscodevim.vim
 code --force --install-extension WallabyJs.quokka-vscode
 code --force --install-extension wingrunr21.vscode-ruby
