@@ -1,4 +1,7 @@
 {
+  "editor.codeActionOnSave": {
+    "source.fixAll.eslint": true
+  },
   "editor.lineNumbers": "relative",
   "editor.tabSize": 2,
   "editor.selectionHighlight": false,
@@ -11,7 +14,6 @@
     { "language": "html", "autoFix": true },
     { "language": "javascript", "autoFix": true }
   ],
-  "eslint.autoFixOnSave": true,
   "explorer.confirmDelete": false,
   "telemetry.enableTelemetry": false,
   "terminal.integrated.shell.osx": "/Users/sliu/homebrew/bin/zsh",
