@@ -5,6 +5,13 @@ if [[ $# -eq 0 ]]; then
   exit 1
 fi
 
+install_dest=$1
+
+if [ ! -d $install_dest ]; then
+  echo "Directory $install_dest does not exist. Spelling?"
+  exit 1
+fi
+
 # If install is slow, make sure telemetry is turned off
 # settings.json disables this as well
 code --force --install-extension alexdima.copy-relative-path
@@ -25,8 +32,6 @@ code --force --install-extension vscodevim.vim
 code --force --install-extension WallabyJs.quokka-vscode
 code --force --install-extension wingrunr21.vscode-ruby
 # code --force --install-extension
-
-install_dest=$1
 
 if [ ! -d $install_dest/.vscode ]; then
   mkdir $install_dest/.vscode
