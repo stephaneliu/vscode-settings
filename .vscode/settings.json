@@ -2,7 +2,7 @@
   "editor.codeActionOnSave": {
     "source.fixAll.eslint": true
   },
-  "editor.lineNumbers": "relative",
+  "editor.lineNumbers": "off",
   "editor.tabSize": 2,
   "editor.selectionHighlight": false,
   "editor.fontFamily": "FiraCode-Retina",
@@ -18,6 +18,7 @@
   "vetur.completion.useScaffoldSnippets": false, // disable in favor of Vue VS Code Snippets plugin by sarah.drasneryy
   "vim.camelCaseMotion.enable": true,
   "vim.easymotion": true,
+  "vim.useSystemClipboard": true,
   "vim.insertModeKeyBindings": [
     {
       "before": ["j", "k"],
