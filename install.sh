@@ -7,23 +7,22 @@ if [[ $# -eq 0 ]]; then
   exit 1
 fi
 
-install_dest=$2
-
-if [ ! -d $install_dest ]; then
-  echo "Directory $install_dest does not exist. Spelling?"
-  exit 1
-fi
-
+install_dest=$1
 install_extension=1
 install_configuration=1
 
 while getopts "ce" opt
 do
   case $opt in
-  (c) install_extension=0;;
-  (e) install_configuration=0;;
+  (c) install_extension=0; install_dest=$2;;
+  (e) install_configuration=0; install_dest=$2;;
   esac
 done
+
+if [ ! -d $install_dest ]; then
+  echo "Directory $install_dest does not exist. Spelling?"
+  exit 1
+fi
 
 if (( install_extension )); then
   # If install is slow, make sure telemetry is turned off
