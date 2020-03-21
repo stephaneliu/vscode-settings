@@ -4,6 +4,7 @@
   },
   "editor.lineNumbers": "off",
   "editor.tabSize": 2,
+  "editor.rulers": [ 100 ],
   "editor.selectionHighlight": false,
   "editor.fontFamily": "FiraCode-Retina",
   "editor.fontLigatures": true,
