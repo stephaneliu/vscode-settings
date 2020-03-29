@@ -29,6 +29,7 @@ if (( install_extension )); then
   # settings.json disables this as well
   code --force --install-extension alexdima.copy-relative-path
   code --force --install-extension austenc.tailwind-docs
+  code --force --install-extension bradlc.vscode-tailwindcss
   code --force --install-extension DavidAnson.vscode-markdownlint
   code --force --install-extension dbaeumer.vscode-eslint
   code --force --install-extension esbenp.prettier-vscode
@@ -53,6 +54,8 @@ if (( install_configuration )); then
   fi
 
   cp -f $install_source/.vscode/settings.json $install_dest/.vscode/settings.json
+  cp -f $install_source/.prettierrc.js $install_dest/
+  cp -f $install_source/.eslintrc.js $install_dest/
 
   if [ -f $install_dest/.gitignore ]; then
     echo ".vscode/settings.json" >> $install_dest/.gitignore
