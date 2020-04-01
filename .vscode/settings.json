@@ -7,8 +7,11 @@
   "editor.rulers": [ 100 ],
   "editor.selectionHighlight": false,
   "editor.fontFamily": "FiraCode-Retina",
+  "editor.fontSize": 10,
   "editor.fontLigatures": true,
   "editor.formatOnSave": true,
+  "editor.wordWrap": "wordWrapColumn",
+  "editor.wrappingIndent": "indent"
   "eslint.validate": ["html", "javascript", "vue"],
   "explorer.confirmDelete": false,
   "telemetry.enableTelemetry": false,
