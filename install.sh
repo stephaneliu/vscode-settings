@@ -28,9 +28,13 @@ if (( install_extension )); then
   # If install is slow, make sure telemetry is turned off
   # settings.json disables this as well
   code --force --install-extension alexdima.copy-relative-path
+  code --force --install-extension aaron-bond.better-comments
   code --force --install-extension austenc.tailwind-docs
+  code --force --install-extension coenraads.bracket-pair-colorizer-2
+  code --force --install-extension christian-kohler.path-intellisense
   code --force --install-extension DavidAnson.vscode-markdownlint
   code --force --install-extension dbaeumer.vscode-eslint
+  code --force --install-extension eamodio.gitlens
   code --force --install-extension esbenp.prettier-vscode
   code --force --install-extension extr0py.vscode-relative-line-numbers
   code --force --install-extension ginfuru.ginfuru-better-solarized-dark-theme
@@ -39,6 +43,7 @@ if (( install_extension )); then
   code --force --install-extension ms-azuretools.vscode-docker
   code --force --install-extension msjsdiag.debugger-for-chrome
   code --force --install-extension octref.vetur
+  code --force --install-extension pkief.material-icon-theme
   code --force --install-extension rebornix.ruby
   code --force --install-extension sdras.night-owl
   code --force --install-extension sdras.vue-vscode-snippets
