@@ -32,6 +32,7 @@ if (( install_extension )); then
   code --force --install-extension austenc.tailwind-docs
   code --force --install-extension coenraads.bracket-pair-colorizer-2
   code --force --install-extension christian-kohler.path-intellisense
+  code --force --install-extension bradlc.vscode-tailwindcss
   code --force --install-extension DavidAnson.vscode-markdownlint
   code --force --install-extension dbaeumer.vscode-eslint
   code --force --install-extension eamodio.gitlens
@@ -58,6 +59,8 @@ if (( install_configuration )); then
   fi
 
   cp -f $install_source/.vscode/settings.json $install_dest/.vscode/settings.json
+  cp -f $install_source/.prettierrc.js $install_dest/
+  cp -f $install_source/.eslintrc.js $install_dest/
 
   if [ -f $install_dest/.gitignore ]; then
     echo ".vscode/settings.json" >> $install_dest/.gitignore

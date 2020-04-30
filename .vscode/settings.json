@@ -1,59 +1,86 @@
 {
-  "editor.codeActionOnSave": {
+    "editor.codeActionOnSave": {
     "source.fixAll.eslint": true
-  },
-  "editor.lineNumbers": "off",
-  "editor.tabSize": 2,
-  "editor.rulers": [ 100 ],
-  "editor.selectionHighlight": false,
-  "editor.fontFamily": "FiraCode-Retina",
-  "editor.fontSize": 10,
-  "editor.fontLigatures": true,
-  "editor.formatOnSave": true,
-  "editor.wordWrap": "wordWrapColumn",
-  "editor.wrappingIndent": "indent"
-  "eslint.validate": ["html", "javascript", "vue"],
-  "explorer.confirmDelete": false,
-  "telemetry.enableTelemetry": false,
-  "terminal.integrated.shell.osx": "/Users/sliu/homebrew/bin/zsh",
-  "terminal.integrated.fontFamily": "Hack Nerd Font",
-  "terminal.external.osxExec": "iTerm.app",
-  "vetur.validation.template": false, // rely on eslint + prettier
-  "vetur.completion.useScaffoldSnippets": false, // disable in favor of Vue VS Code Snippets plugin by sarah.drasneryy
-  "vim.camelCaseMotion.enable": true,
-  "vim.easymotion": true,
-  "vim.useSystemClipboard": true,
-  "vim.insertModeKeyBindings": [
-    {
-      "before": ["j", "k"],
-      "after": ["<Esc>"]
     },
-    {
-      "before": ["k", "j"],
-      "after": ["<Esc>"]
-    }
-  ],
-  "vim.normalModeKeyBindingsNonRecursive": [
-    {
-      "before": ["H"],
-      "after": ["g", "T"]
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
-    {
-      "before": ["L"],
-      "after": ["g", "t"]
-    },
-    {
-      "before": ["w"],
-      "after": ["<leader>", "w"]
-    },
-    {
-      "before": ["e"],
-      "after": ["<leader>", "e"]
-    },
-    {
-      "before": ["b"],
-      "after": ["<leader>", "b"]
-    }
-  ],
-  "vim.leader": ","
+    "editor.lineNumbers": "off",
+    "editor.tabSize": 2,
+    "editor.rulers": [ 100 ],
+    "editor.selectionHighlight": false,
+    "editor.fontFamily": "FiraCode-Retina",
+    "editor.fontSize": 10,
+    "editor.fontLigatures": true,
+    "editor.formatOnSave": true,
+    "editor.wordWrap": "wordWrapColumn",
+    "editor.wrappingIndent": "indent"
+    "eslint.validate": ["html", "javascript", "vue"],
+    "explorer.confirmDelete": false,
+    "telemetry.enableTelemetry": false,
+    "terminal.integrated.shell.osx": "/Users/sliu/homebrew/bin/zsh",
+    "terminal.integrated.fontFamily": "Hack Nerd Font",
+    "terminal.external.osxExec": "iTerm.app",
+    "vetur.validation.template": false, // rely on eslint + prettier
+    "vetur.completion.useScaffoldSnippets": false, // disable in favor of Vue VS Code Snippets plugin by sarah.drasneryy
+    // "vim.debug.loggingLevelForConsole": "debug", // open up developer console (chrome browser to view logs)
+    "vim.camelCaseMotion.enable": true,
+    "vim.easymotion": true,
+    "vim.useSystemClipboard": true,
+    "vim.insertModeKeyBindings": [
+        {
+            "before": ["j", "k"],
+            "after": ["<Esc>"]
+        },
+        {
+            "before": ["k", "j"],
+            "after": ["<Esc>"]
+        },
+        {
+            "before": ["j", "j"],
+            "after": ["<Esc>"]
+        },
+        {
+            "before": ["k", "k"],
+            "after": ["<Esc>"]
+        }
+    ],
+    "vim.normalModeKeyBindings": [
+        {
+            "before": ["<C-e>"],
+            "commands": ["workbench.view.explorer"]
+        },
+        {
+            "before": ["<C-x>"],
+            "commands": ["workbench.view.extensions"]
+        }
+    ],
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            "before": ["Z", "Z"],
+            "commands": [":wq"]
+        },
+        {
+            "before": ["H"],
+            "after": ["g", "T"]
+        },
+        {
+            "before": ["L"],
+            "after": ["g", "t"]
+        },
+        {
+            "before": ["w"],
+            "after": ["<leader>", "w"]
+        },
+        {
+            "before": ["e"],
+            "after": ["<leader>", "e"]
+        },
+        {
+            "before": ["b"],
+            "after": ["<leader>", "b"]
+        }
+    ],
+    "vim.leader": ","
 }
